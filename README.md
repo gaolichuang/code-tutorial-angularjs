@@ -20,7 +20,7 @@ http://plnkr.co/  (btw:So many samples here)
 > 用来调试js/html时后端启动webserver， 没有依赖，直接启动 server一个path  
 
 ## References
-[controller as]: https://toddmotto.com/digging-into-angulars-controller-as-syntax/
+[controller as] https://toddmotto.com/digging-into-angulars-controller-as-syntax/
   - it is not just an alias, it is class to object: (myCtrl as mc)
 
 ## Project Sample
@@ -28,7 +28,12 @@ http://plnkr.co/  (btw:So many samples here)
 basic use 
 ##### angular-phonecat  
 https://github.com/angular/angular-phonecat
-npm start
+> npm start  
+> search... filter
+##### angular-phonecat  
+https://github.com/suryatech/codeschool-shaping-up-with-angular
+Video Lesson:https://www.codeschool.com/courses/shaping-up-with-angular-js
+
 
 ## Other
 ##### Directory Structure
