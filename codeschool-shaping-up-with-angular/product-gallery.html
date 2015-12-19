@@ -1,0 +1,15 @@
+<div ng-show="product.images.length">
+  <div class="img-wrap">
+    <img ng-src="{{product.images[gallery.current]}}" />
+  </div>
+  <ul class="img-thumbnails clearfix">
+  	<!--  	ng-repeat loop the image in product.images
+  			ng-src: use ng-repeat image
+  			ng-click:  expression, setCurrent is the function in controller of gallery
+  			$index is a build-in variable of ng-repeat. Reference:https://docs.angularjs.org/api/ng/directive/ngRepeat
+  	-->
+    <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+      <img ng-src="{{image}}" ng-click="gallery.setCurrent($index)" />
+    </li>
+  </ul>
+</div>

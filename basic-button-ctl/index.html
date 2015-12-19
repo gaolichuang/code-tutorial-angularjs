@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Example - Input and Button using Controller</title>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+  <script src="script.js"></script>
+
+</head>
+
+<body ng-app="myApp">
+  <div>
+    <!-- 必须使用 as， 否则无法call function 参看 
+    https://toddmotto.com/digging-into-angulars-cont
+    roller-as-syntax/-->
+    <form ng-controller="mCtrl as mc">
+      <fieldset>
+        <label>
+          Who:
+          <input ng-model="mc.username">
+        </label>
+        <button ng-click="mc.sayHello()">Save</button>
+      </fieldset>
+      <hr> Greeting: {{mc.greeting}}
+      <hr> UserName: {{mc.username}}
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- ng-app is the main point of angular project -->
+<html ng-app="gemStore">
+  <head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="products.js"></script>
+    <!-- include the dependency of all js, css... -->
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+
+  <!-- we can use controller to communicate with html template and js -->
+  <body ng-controller="StoreController as store">
+    <!--  Store Header  -->
+    <header>
+      <h1 class="text-center">Flatlander Crafted Gems</h1>
+      <h2 class="text-center">– an Angular store –</h2>
+    </header>
+
+    <!--  Products Container  -->
+    <div class="list-group">
+      <!--  Product Container, use ng-repeat to deal loop -->
+      <div class="list-group-item" ng-repeat="product in store.products">
+        <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
+
+        <!-- Image Gallery   custom directive -->
+        <product-gallery></product-gallery>
+
+        <!-- Product Tabs custom directive -->
+        <product-tabs></product-tabs>
+
+      </div>
+
+    </div>
+  </body>
+</html>
