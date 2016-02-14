@@ -1,7 +1,8 @@
 /**
  * Created by Sandeep on 01/06/14.
  */
-angular.module('movieApp.controllers',[]).controller('MovieListController',function($scope,$state,popupService,$window,Movie){
+angular.module('movieApp.controllers',[])
+.controller('MovieListController',function($scope,$state,popupService,$window,Movie){
 
     $scope.movies=Movie.query();
 

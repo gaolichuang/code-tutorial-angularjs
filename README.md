@@ -30,10 +30,18 @@ basic use
 https://github.com/angular/angular-phonecat
 > npm start  
 > search... filter
+
 ##### angular-phonecat  
 https://github.com/suryatech/codeschool-shaping-up-with-angular
 Video Lesson:https://www.codeschool.com/courses/shaping-up-with-angular-js
 
+#####  sp-ui-router
+use ui-view and ui-route
+
+##### MovieApp
+> creating-crud-app-minutes-angulars-resource
+> http://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/
+ 
 
 ## Other
 ##### Directory Structure
